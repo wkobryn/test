@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "BUILD"'
       }
     }
+    stage('deploy') {
+      steps {
+        pwd(tmp: true)
+      }
+    }
   }
 }
